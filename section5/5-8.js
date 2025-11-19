@@ -4,7 +4,6 @@ function solution(s, t) {
   for (let x of t) {
     sH.set(x, (sH.get(x) || 0) - 1);
   }
-  console.log(sH);
   let len = t.length - 1;
   for (let i = 0; i < len; i++) {
     sH.set(s[i], (sH.get(s[i]) || 0) + 1);
